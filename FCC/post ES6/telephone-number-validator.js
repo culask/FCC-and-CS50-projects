@@ -1,4 +1,4 @@
 function telephoneCheck(str) {
-    let regex = /^(1\s?)?((\([0-9]{3}\))|[0-9]{3})[\s\-]?[\0-9]{3}[\s\-]?[0-9]{4}$/g;
+    let regex = /^(1\s?)?((\(\d{3}\))|\d{3})[\s\-]?\d{3}[\s\-]?\d{4}$/g;
     return regex.test(str);
 }
